@@ -2,15 +2,15 @@ import React from 'react';
 import data from './data';
 const { companies } = data;
 
-const Company = () => {
+const Companies = () => {
     return (
         <div>
             <h3>Companies</h3>
-            <div className="CompanyList">
+            <div className="company-list list">
                 <ul>
                     {companies.map(company => {
                         return <li key={company.id}>
-                            {company.name} {company.state}
+                            <strong>{company.name}</strong> {company.state}
                         </li>
                     })}
                 </ul>
@@ -19,4 +19,4 @@ const Company = () => {
     )
 }
 
-export default Company
+export default Companies;
