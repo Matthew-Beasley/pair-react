@@ -98,7 +98,3 @@ const Stats = () => {
     )
 }
 export default Stats;
-
-/*
-Display the most common material for products.
-*/
